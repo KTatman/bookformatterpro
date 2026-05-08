@@ -1,3 +1,4 @@
+import Upgrade from "./pages/Upgrade";
 import { Switch, Route, useLocation } from "wouter";
 import { useEffect } from "react";
 import { queryClient } from "./lib/queryClient";
