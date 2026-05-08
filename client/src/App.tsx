@@ -47,6 +47,7 @@ function AuthRoute() {
 function Router() {
   return (
     <Switch>
+      <Route path="/upgrade" element={<Upgrade />} />
       <Route path="/" component={Home} />
       <Route path="/auth" component={AuthRoute} />
       <Route path="/dashboard" component={() => <ProtectedRoute component={Dashboard} />} />
@@ -56,7 +57,6 @@ function Router() {
     </Switch>
   );
 }
-
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
